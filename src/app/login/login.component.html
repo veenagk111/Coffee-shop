@@ -1,0 +1,26 @@
+<div *ngIf="data">
+    <table>
+        <th>id</th>
+        <th>uid</th>
+
+        <tr *ngFor="let product of data">
+            <td>{{product.id}}</td>
+            <td>{{product.uid}}</td>  
+        </tr>
+
+    </table>
+</div>
+
+<div class="big">
+    <form name="myForm" >
+        <label for="username">Username : </label>
+        <input name="text" id="username"  required>
+        </form><br>
+    <form name="myForm">
+        <label for="password">Password : </label>
+        <input name="password" id="password" required>
+    </form><br>
+<div class="input"> 
+    <button  type="submit" class="nav-link" routerLink="product" (click)='getData()'>login</button>
+</div>
+</div>
